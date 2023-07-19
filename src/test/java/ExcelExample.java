@@ -30,7 +30,7 @@ public class ExcelExample {
         }
         @DataProvider(name="testdata")
         public Object[][] testDataExample(){
-            ReadExcelFile configuration = new ReadExcelFile("C:\\Users\\poorvid\\IdeaProjects\\DataDrivenDevelopement-1\\doc\\Login_testdata.xlsx");
+            ReadExcelFile configuration = new ReadExcelFile("doc/Login_testdata.xlsx");
             int rows = configuration.getRowCount(0);
            Object[][]signin_credentials = new Object[rows][2];
 
