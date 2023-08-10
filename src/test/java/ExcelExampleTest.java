@@ -7,7 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class ExcelExample {
+public class ExcelExampleTest {
 
     WebDriver driver;
         @Test(dataProvider="testdata")
