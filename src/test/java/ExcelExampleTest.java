@@ -12,8 +12,10 @@ public class ExcelExampleTest {
     WebDriver driver;
         @Test(dataProvider="testdata")
         public void demoClass(String username, String password) throws InterruptedException {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            //WebDriverManager.chromedriver().setup();
+            //driver = new ChromeDriver();
+            WebDriverManager.firefoxdriver().setup();
+            driver=new FirefoxDriver();
             System.out.println(driver.getTitle());
             driver.get("https://www.automationexercise.com/login");
             driver.findElement(By.name("email")).sendKeys(username);
